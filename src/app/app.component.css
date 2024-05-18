@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.label {
+  font-style: oblique;
+  font-size: 50px;
+}
+
+.logo-label {
+  color: red;
+}
+
+.icon {
+  color: #000000;
+  font-size: 30px;
+  margin: 0 10px 0 10px;
+}
+
+img {
+  margin: 10px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8rem;
+}
