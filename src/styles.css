@@ -2,5 +2,8 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-  background: linear-gradient(135deg, #97ea30, #e3cf19) !important;
+  background-image: url('./assets/rainbow-colored-swirl-twisting-background_97886-1113.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
