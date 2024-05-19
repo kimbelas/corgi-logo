@@ -2,5 +2,5 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-  background-color: silver;
+  background: linear-gradient(135deg, #97ea30, #e3cf19) !important;
 }
