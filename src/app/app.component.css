@@ -22,8 +22,9 @@
   margin: 0 10px 0 10px;
 }
 
-img {
-  margin: 10px;
+img.logo-brand:hover {
+  cursor: pointer;
+  /* margin: 10px; */
 }
 
 .main-content {

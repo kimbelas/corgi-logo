@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MemeCoin';
+  onClick(value: string): void {
+    if (value === 'x') {
+      window.open('https://x.com/CatApe_Solana');
+    } else if ( value === 'tg') {
+      window.open('https://t.me/catape_solana');
+    }
+  }
 }
