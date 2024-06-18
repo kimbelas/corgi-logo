@@ -10,7 +10,7 @@ export class AppComponent {
     if (value === 'x') {
       window.open('https://x.com/GBILLY_SOL');
     } else if ( value === 'tg') {
-      // window.open('https://t.me/catape_solana');
+      window.open('https://t.me/GbillyG');
     }
   }
 
