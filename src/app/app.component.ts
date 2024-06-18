@@ -13,4 +13,8 @@ export class AppComponent {
       window.open('https://t.me/catape_solana');
     }
   }
+
+  onBuy(): void {
+    window.open('https://pump.fun/');
+  }
 }
