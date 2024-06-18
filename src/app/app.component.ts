@@ -15,6 +15,6 @@ export class AppComponent {
   }
 
   onBuy(): void {
-    window.open('https://pump.fun/');
+    window.open('https://pump.fun/BFM9ZghaAWZ4bsQyhCECuSKtNLe7iyjLGTm8SK3upump');
   }
 }
