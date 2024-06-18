@@ -29,19 +29,30 @@
     cursor: pointer;
     /* margin: 10px; */
   }
+
+  .buy-me-btn:hover {
+    background: linear-gradient(135deg, #417488, #4fbd65);
+    cursor: pointer;
+  }
 }
 
 .section-2 {
-  background: linear-gradient(135deg, #7ec7e4, #d7f1dc) !important;
+  background: linear-gradient(135deg, #417488, #4fbd65) !important;
   width: 100%;
 }
 
 .section-3 {
-  background: linear-gradient(405deg, #7ec7e4, #d7f1dc) !important;
+  background: linear-gradient(405deg, #417488, #4fbd65) !important;
   width: 100%;
 }
 
 .section-4 {
-  background: linear-gradient(135deg, #7ec7e4, #d7f1dc) !important;
+  background: linear-gradient(135deg, #417488, #4fbd65) !important;
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .section-1 {
+    height: auto; /* Adjust height as needed */
+  }
 }
