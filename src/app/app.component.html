@@ -1,3 +1,9 @@
+<div class="object1" id="object1"></div>
+<div class="object2" id="object2"></div>
+<div class="object3" id="object3"></div>
+<div class="object4" id="object4"></div>
+<div class="object5" id="object5"></div>
+
 <div class="border-images">
   <div class="navbar">
     <div class="row w-100 justify-content-between align-items-center">
@@ -31,52 +37,46 @@
   <div class="section-1">
     <div class="justify-content-center align-items-center">
       <div class="col-12 text-center image-container">
-        <img src="../assets/belli-pfp.png" height="50%" width="50%" />
+        <img src="../assets/belli-pfp.png" height="33%" width="33%" />
       </div>
     </div>
 
     <div class="my-4">
       <div class="col-12 text-center">
-        <span style="font-size: 40px">$BELLI</span>
+        <span class="blinking-text">$BELLI</span>
       </div>
     </div>
 
-    <div class="col-12 text-center">
-      <span
-        class="buy-me-btn"
-        style="
-          font-size: 40px;
-          border: 1px solid black;
-          padding: 15px;
-          border-radius: 50px;
-          margin: 5px;
-        "
-        (click)="onBuy()"
-        >BUY & HODL</span
-      >
-    </div>
-    <div class="col-12 text-center">
-      <div class="gif-container" (click)="onBuy()">
-        <img src="../assets/klick-click.gif" class="click-me-gif" />
-      </div>
-    </div>
-
-    <div class="col-12 justify-content-center image-container">
-      <img src="../assets/belii-bitcoin.png" height="50%" width="50%" />
-      <img src="../assets/belii-g.png" height="50%" width="50%" />
-      <img src="../assets/belli-fairy.png" height="50%" width="50%" />
-      <img src="../assets/belli-police.png" height="50%" width="50%" />
-      <img src="../assets/belli-glasses.png" height="50%" width="50%" />
-      <img src="../assets/belli-hodl.png" height="50%" width="50%" />
-    </div>
-
-    <div class="my-4">
-      <div class="col-12 text-center">
-        <span style="font-size: 40px">BELLI TALKSSSS</span>
-      </div>
-    </div>
     <div class="col-12 justify-content-center image-container-2">
-      <img src="../assets/belli-borders.png" width='100%'/>
+      <img src="../assets/belii-bitcoin.png" height="33%" width="33%" />
+      <img src="../assets/belii-g.png" height="33%" width="33%" />
+      <img src="../assets/belli-fairy.png" height="33%" width="33%" />
+    </div>
+
+    <div class="col-12 justify-content-center image-container-2">
+      <img src="../assets/belli-police.png" height="33%" width="33%" />
+      <img src="../assets/belli-glasses.png" height="33%" width="33%" />
+      <img src="../assets/belli-hodl.png" height="33%" width="33%" />
+    </div>
+
+    <div class="my-4">
+      <div class="col-12 text-center default-text-container">
+        <p class="default-text">BELLI TALKSSSS</p>
+      </div>
+    </div>
+    <div class="col-12 justify-content-center image-container">
+      <img src="../assets/belli-borders.png" width="100%" />
+    </div>
+
+    <div class="mt-5">
+      <div class="col-12 text-center">
+        <p class="buynhold-text" (click)="onBuy()">BUY & HODL</p>
+      </div>
+      <div class="col-12 text-center">
+        <div class="gif-container" (click)="onBuy()">
+          <img src="../assets/klick-click.gif" class="click-me-gif" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
