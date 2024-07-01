@@ -76,6 +76,7 @@
   border-radius: 10px;
   animation: color-change 3s infinite;
   border: 3px solid white;
+  word-wrap: break-word;
 }
 
 .border-images {
@@ -94,10 +95,6 @@
     border-radius: 16px 16px 16px 16px;
     box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
   }
-}
-
-.belli-pfp {
-  transition: transform 0.6s;
 }
 
 .belli-pfp:hover {
