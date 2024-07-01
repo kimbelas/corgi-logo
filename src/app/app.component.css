@@ -1,3 +1,38 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.5s;
+}
+
+.border-images {
+  background-color: rgb(197, 204, 44);
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+  border-width: 20px;
+  border-style: solid;
+  border-image-source: url("../assets/belli-borders.png");
+  border-image-slice: 1;
+  border-image-repeat: repeat;
+}
+
 .navbar {
   display: flex;
   margin-bottom: 1rem;
@@ -8,7 +43,26 @@
 }
 
 .section-1 {
-  height: 100vh;
+  .image-container {
+    width: 80%;
+    margin: auto;
+
+    img {
+      border-radius: 10%;
+      padding: 10px;
+    }
+  }
+
+  .image-container-2 {
+    width: 80%;
+    margin: auto;
+
+    img {
+      border: 2px solid #d0d32e;
+      border-radius: 5px;
+      margin: 10px;
+    }
+  }
 
   .label {
     font-style: oblique;
@@ -30,7 +84,7 @@
   }
 
   .buy-me-btn:hover {
-    background: linear-gradient(135deg, #417488, #4fbd65);
+    background: linear-gradient(135deg, #d0d32e, #b1b071);
     cursor: pointer;
   }
 
@@ -45,87 +99,5 @@
 
   .gif-container:hover {
     cursor: pointer;
-  }
-}
-
-.section-2 {
-  background: linear-gradient(135deg, #417488, #4fbd65) !important;
-  width: 100%;
-
-  .span-text {
-    font-size: 40px;
-  }
-
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(216, 184, 5, 0.1);
-    margin: 20px;
-  }
-}
-
-.section-3 {
-  background: linear-gradient(405deg, #417488, #4fbd65) !important;
-  width: 100%;
-
-  .span-text {
-    font-size: 40px;
-  }
-
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(12, 172, 60, 0.1);
-    margin: 20px;
-  }
-}
-
-.section-4 {
-  background: linear-gradient(145deg, #417488, #4fbd65) !important;
-  width: 100%;
-  height: 650px;
-
-  .span-text {
-    font-size: 40px;
-  }
-
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(12, 172, 60, 0.1);
-  }
-}
-
-@media (max-width: 767px) {
-  .section-1 {
-    height: auto;
-  }
-
-  .section-2 {
-    padding-bottom: 20px;
-
-    .span-text {
-      font-size: 20px;
-    }
-  }
-
-  .section-3 {
-    padding-bottom: 20px;
-
-    .span-text {
-      font-size: 20px;
-    }
-  }
-
-  .section-4 {
-    height: auto;
-    padding-bottom: 40px;
-
-    .span-text {
-      font-size: 20px;
-    }
   }
 }
