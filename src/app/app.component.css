@@ -18,86 +18,293 @@
   }
 }
 
+@keyframes size-change {
+  0% {
+    font-size: 40px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 40px;
+  }
+}
+
+@keyframes color-change {
+  from {
+    background-color: rgb(245, 255, 100);
+  }
+  to {
+    background-color: rgb(255, 255, 39);
+  }
+}
+
 .shake-on-hover:hover {
   animation: shake 0.5s;
 }
 
+.blinking-text {
+  animation: size-change 2s infinite;
+  margin: 10px 0 10px 0;
+  font-size: 125px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  height: 100px; /* Fixed height to avoid content shift */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.default-text-container {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.default-text {
+  margin: 0 auto;
+  max-width: 1120px;
+  line-height: 1.6;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #ffe65e;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  animation: color-change 3s infinite;
+  border: 3px solid white;
+}
+
 .border-images {
-  background-color: rgb(197, 204, 44);
+  background-image: url(../assets/bg-stars.jpg);
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
-  border-width: 20px;
+  /* font-family: "Bitter", sans-serif; */
+  /* border-width: 20px;
   border-style: solid;
   border-image-source: url("../assets/belli-borders.png");
   border-image-slice: 1;
-  border-image-repeat: repeat;
+  border-image-repeat: repeat; */
 }
 
 .navbar {
   display: flex;
   margin-bottom: 1rem;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
 
   .logo-brand:hover {
     cursor: pointer;
   }
 }
 
+.image-container {
+  width: 80%;
+  margin: auto;
+
+  img {
+    border-style: solid;
+    border-width: 9px 9px 9px 9px;
+    border-color: gold;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
+  }
+}
+
+.image-container-2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-style: solid;
+    border-width: 9px 9px 9px 9px;
+    border-color: gold;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
+    margin-top: 3px;
+    margin-right: 3px;
+  }
+}
+
+.image-container-3 {
+  width: 80%;
+  margin: auto;
+
+  img {
+    border: 2px solid #d0d32e;
+    border-radius: 5px;
+    margin: 10px;
+  }
+}
+
+.label {
+  font-style: oblique;
+  font-size: 50px;
+}
+
+.label-p {
+  font-size: 100px;
+}
+
+.logo-label {
+  color: orange;
+}
+
+.icon {
+  color: #000000;
+  font-size: 30px;
+  margin: 0 10px 0 10px;
+}
+
+.buynhold-text {
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: transparent;
+  color: white;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.buynhold-text:hover {
+  background: #d0d32e;
+  cursor: pointer;
+}
+
+.gif-container {
+  display: inline-block;
+  margin-top: -50px; /* Adjust as needed */
+
+  .click-me-gif {
+    height: 130px;
+  }
+}
+
+.gif-container:hover {
+  cursor: pointer;
+}
+
+@keyframes fall {
+  0% {
+    top: -52px; /* Start just above the viewport */
+  }
+  100% {
+    top: 100vh; /* Move to the bottom of the viewport */
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    left: 0; /* Start from the left side */
+  }
+  100% {
+    left: 100vw; /* Move to the right side of the viewport */
+  }
+}
+
+.navbar {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: #ffe660;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
 .section-1 {
-  .image-container {
-    width: 80%;
-    margin: auto;
+  padding-top: 130px; /* Adjust according to the height of your navbar */
+}
 
-    img {
-      border-radius: 10%;
-      padding: 10px;
-    }
-  }
+.object1 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj1.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 10%;
+  left: 0;
+}
 
-  .image-container-2 {
-    width: 80%;
-    margin: auto;
+.object2 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj2.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
 
-    img {
-      border: 2px solid #d0d32e;
-      border-radius: 5px;
-      margin: 10px;
-    }
-  }
+.object3 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj3.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
 
-  .label {
-    font-style: oblique;
-    font-size: 50px;
-  }
+.object4 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj4.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
 
-  .label-p {
-    font-size: 100px;
-  }
+.object5 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj5.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
 
-  .logo-label {
-    color: orange;
-  }
+#object1 {
+  left: 90%; /* Start at the left side of the screen */
+  animation: fall 4.5s linear infinite;
+}
 
-  .icon {
-    color: #000000;
-    font-size: 30px;
-    margin: 0 10px 0 10px;
-  }
+#object2 {
+  left: 23%; /* Start at the left side of the screen */
+  animation: fall 3.5s linear infinite;
+}
 
-  .buy-me-btn:hover {
-    background: linear-gradient(135deg, #d0d32e, #b1b071);
-    cursor: pointer;
-  }
+#object3 {
+  left: 35%; /* Start at the left side of the screen */
+  animation: fall 2.5s linear infinite;
+}
 
-  .gif-container {
-    display: inline-block;
-    margin-top: -50px; /* Adjust as needed */
+#object4 {
+  left: 65%; /* Start at the left side of the screen */
+  animation: fall 6.5s linear infinite;
+}
 
-    .click-me-gif {
-      height: 130px;
-    }
-  }
-
-  .gif-container:hover {
-    cursor: pointer;
-  }
+#object5 {
+  left: 10%; /* Start at the left side of the screen */
+  animation: fall 5.5s linear infinite;
 }
