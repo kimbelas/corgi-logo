@@ -96,6 +96,15 @@
   }
 }
 
+.belli-pfp {
+  transition: transform 0.6s;
+}
+
+.belli-pfp:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .image-container-2 {
   width: 80%;
   margin: auto;

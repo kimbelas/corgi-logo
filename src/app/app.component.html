@@ -38,7 +38,11 @@
   <div class="section-1">
     <div class="justify-content-center align-items-center">
       <div class="col-12 text-center image-container">
-        <img src="../assets/belli-pfp.png" height="33%" width="33%" />
+        <img
+          src="../assets/belli-pfp.png"
+          height="50%"
+          width="50%"
+        />
       </div>
     </div>
 
@@ -49,20 +53,56 @@
     </div>
 
     <div class="col-12 justify-content-center image-container-2">
-      <img src="../assets/belii-bitcoin.png" height="33%" width="33%" />
-      <img src="../assets/belii-g.png" height="33%" width="33%" />
-      <img src="../assets/belli-fairy.png" height="33%" width="33%" />
+      <img
+        src="../assets/belii-bitcoin.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
+      <img
+        src="../assets/belii-g.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
+      <img
+        src="../assets/belli-fairy.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
     </div>
 
     <div class="col-12 justify-content-center image-container-2">
-      <img src="../assets/belli-police.png" height="33%" width="33%" />
-      <img src="../assets/belli-glasses.png" height="33%" width="33%" />
-      <img src="../assets/belli-hodl.png" height="33%" width="33%" />
+      <img
+        src="../assets/belli-police.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
+      <img
+        src="../assets/belli-glasses.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
+      <img
+        src="../assets/belli-hodl.png"
+        height="33%"
+        width="33%"
+        class="belli-pfp"
+      />
     </div>
 
     <div class="my-4">
       <div class="col-12 text-center default-text-container">
-        <p class="default-text">BELLI TALKSSSS</p>
+        <p
+          class="default-text"
+          (mouseover)="onMouseOver()"
+          (mouseout)="onMouseOut()"
+        >
+          {{ textContent }}
+        </p>
       </div>
     </div>
     <div class="col-12 justify-content-center image-container">
@@ -73,7 +113,7 @@
       <div class="col-12 text-center">
         <p class="buynhold-text" (click)="onBuy()">BUY & HODL</p>
       </div>
-      <div class="col-12 text-center">
+      <div class="col-12 text-center pb-4">
         <div class="gif-container" (click)="onBuy()">
           <img src="../assets/klick-click.gif" class="click-me-gif" />
         </div>
