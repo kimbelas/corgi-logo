@@ -39,6 +39,29 @@
   }
 }
 
+@keyframes star {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+}
+
+.star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, #fff, rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  pointer-events: none;
+  animation: star 0.1s linear;
+  opacity: 0;
+  z-index: 9999; /* Ensure star appears on top */
+}
+
 .shake-on-hover:hover {
   animation: shake 0.5s;
 }
