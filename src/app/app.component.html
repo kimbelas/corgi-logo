@@ -1,121 +1,119 @@
-<div class="object1" id="object1"></div>
-<div class="object2" id="object2"></div>
-<div class="object3" id="object3"></div>
-<div class="object4" id="object4"></div>
-<div class="object5" id="object5"></div>
+<div appGlitter>
+  <div class="object1" id="object1"></div>
+  <div class="object2" id="object2"></div>
+  <div class="object3" id="object3"></div>
+  <div class="object4" id="object4"></div>
+  <div class="object5" id="object5"></div>
 
-<div class="border-images">
-  <div class="navbar">
-    <div class="row w-100 justify-content-between align-items-center">
-      <div class="col-12 d-flex justify-content-center">
+  <div class="border-images">
+    <div class="navbar">
+      <div class="row w-100 justify-content-between align-items-center">
+        <div class="col-12 d-flex justify-content-center">
+          <img
+            class="logo-brand shake-on-hover"
+            (click)="onClick('x')"
+            src="../assets/x-icon-removebg-preview.png"
+            height="60px"
+            alt="X Icon"
+          />
+          <img
+            class="logo-brand shake-on-hover"
+            (click)="onClick('tg')"
+            src="../assets/tg-icon-removebg-preview.png"
+            height="60px"
+            [style]="{ 'padding-left': '25px' }"
+            alt="TG Icon"
+          />
+          <img
+            class="logo-brand shake-on-hover"
+            (click)="onClick('pump')"
+            src="../assets/pumpfun-removebg-preview.png"
+            height="60px"
+            [style]="{ 'padding-left': '35px' }"
+            alt="TG Icon"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="section-1">
+      <div class="justify-content-center align-items-center">
+        <div class="col-12 text-center image-container">
+          <img src="../assets/belli-pfp.png" height="50%" width="50%" />
+        </div>
+      </div>
+
+      <div class="my-4">
+        <div class="col-12 text-center">
+          <span class="blinking-text">$BELLI</span>
+        </div>
+      </div>
+
+      <div class="col-12 justify-content-center image-container-2">
         <img
-          class="logo-brand shake-on-hover"
-          (click)="onClick('x')"
-          src="../assets/x-icon-removebg-preview.png"
-          height="60px"
-          alt="X Icon"
+          src="../assets/belii-bitcoin.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
         />
         <img
-          class="logo-brand shake-on-hover"
-          (click)="onClick('tg')"
-          src="../assets/tg-icon-removebg-preview.png"
-          height="60px"
-          [style]="{ 'padding-left': '25px' }"
-          alt="TG Icon"
+          src="../assets/belii-g.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
         />
         <img
-          class="logo-brand shake-on-hover"
-          (click)="onClick('pump')"
-          src="../assets/pumpfun-removebg-preview.png"
-          height="60px"
-          [style]="{ 'padding-left': '35px' }"
-          alt="TG Icon"
+          src="../assets/belli-fairy.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
         />
       </div>
-    </div>
-  </div>
 
-  <div class="section-1">
-    <div class="justify-content-center align-items-center">
-      <div class="col-12 text-center image-container">
+      <div class="col-12 justify-content-center image-container-2">
         <img
-          src="../assets/belli-pfp.png"
-          height="50%"
-          width="50%"
+          src="../assets/belli-police.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
+        />
+        <img
+          src="../assets/belli-glasses.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
+        />
+        <img
+          src="../assets/belli-hodl.png"
+          height="33%"
+          width="33%"
+          class="belli-pfp"
         />
       </div>
-    </div>
 
-    <div class="my-4">
-      <div class="col-12 text-center">
-        <span class="blinking-text">$BELLI</span>
+      <div class="my-4">
+        <div class="col-12 text-center default-text-container">
+          <p
+            class="default-text"
+            (mouseover)="onMouseOver()"
+            (mouseout)="onMouseOut()"
+          >
+            {{ textContent }}
+          </p>
+        </div>
       </div>
-    </div>
-
-    <div class="col-12 justify-content-center image-container-2">
-      <img
-        src="../assets/belii-bitcoin.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-      <img
-        src="../assets/belii-g.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-      <img
-        src="../assets/belli-fairy.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-    </div>
-
-    <div class="col-12 justify-content-center image-container-2">
-      <img
-        src="../assets/belli-police.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-      <img
-        src="../assets/belli-glasses.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-      <img
-        src="../assets/belli-hodl.png"
-        height="33%"
-        width="33%"
-        class="belli-pfp"
-      />
-    </div>
-
-    <div class="my-4">
-      <div class="col-12 text-center default-text-container">
-        <p
-          class="default-text"
-          (mouseover)="onMouseOver()"
-          (mouseout)="onMouseOut()"
-        >
-          {{ textContent }}
-        </p>
+      <div class="col-12 justify-content-center image-container">
+        <img src="../assets/belli-borders.png" width="100%" />
       </div>
-    </div>
-    <div class="col-12 justify-content-center image-container">
-      <img src="../assets/belli-borders.png" width="100%" />
-    </div>
 
-    <div class="mt-5">
-      <div class="col-12 text-center">
-        <p class="buynhold-text" (click)="onBuy()">BUY & HODL</p>
-      </div>
-      <div class="col-12 text-center pb-4">
-        <div class="gif-container" (click)="onBuy()">
-          <img src="../assets/klick-click.gif" class="click-me-gif" />
+      <div class="mt-5">
+        <div class="col-12 text-center">
+          <p class="buynhold-text" (click)="onBuy()">BUY & HODL</p>
+        </div>
+        <div class="col-12 text-center pb-4">
+          <div class="gif-container" (click)="onBuy()">
+            <img src="../assets/klick-click.gif" class="click-me-gif" />
+          </div>
         </div>
       </div>
     </div>
