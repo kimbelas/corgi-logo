@@ -81,25 +81,6 @@
 .border-images {
   background-image: url(../assets/bg-stars.jpg);
   height: 100%;
-  /* font-family: "Bitter", sans-serif; */
-  /* border-width: 20px;
-  border-style: solid;
-  border-image-source: url("../assets/belli-borders.png");
-  border-image-slice: 1;
-  border-image-repeat: repeat; */
-}
-
-.navbar {
-  display: flex;
-  margin-bottom: 1rem;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  opacity: 0.9;
-
-  .logo-brand:hover {
-    cursor: pointer;
-  }
 }
 
 .image-container {
@@ -108,8 +89,8 @@
 
   img {
     border-style: solid;
-    border-width: 9px 9px 9px 9px;
-    border-color: gold;
+    border-width: 6px 6px 6px 6px;
+    border-color: #fff093;
     border-radius: 16px 16px 16px 16px;
     box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
   }
@@ -124,8 +105,8 @@
 
   img {
     border-style: solid;
-    border-width: 9px 9px 9px 9px;
-    border-color: gold;
+    border-width: 6px 6px 6px 6px;
+    border-color: #fff093;
     border-radius: 16px 16px 16px 16px;
     box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
     margin-top: 3px;
@@ -138,7 +119,7 @@
   margin: auto;
 
   img {
-    border: 2px solid #d0d32e;
+    border: 2px solid #ffffb6;
     border-radius: 5px;
     margin: 10px;
   }
@@ -172,14 +153,15 @@
   letter-spacing: 1.7px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
   background-color: transparent;
-  color: white;
+  color: #ffffb6;
   box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
-  border: 3px solid white;
+  border: 3px solid #ffffb6;
 }
 
 .buynhold-text:hover {
-  background: #d0d32e;
+  background: #ffffb6;
+  color: black;
   cursor: pointer;
 }
 
@@ -217,11 +199,12 @@
 .navbar {
   display: flex;
   margin-bottom: 1rem;
-  background-color: #ffe660;
+  background-color: #fff093;
   position: fixed;
   width: 100%;
   opacity: 0.9;
-  z-index: 1000; /* Ensure navbar is above other content */
+  z-index: 1000;
+  max-height: 80px;
 }
 
 .section-1 {
