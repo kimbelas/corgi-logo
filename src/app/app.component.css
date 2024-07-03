@@ -20,13 +20,25 @@
 
 @keyframes size-change {
   0% {
-    font-size: 40px;
+    font-size: 80px;
   }
   50% {
-    font-size: 60px;
+    font-size: 120px;
   }
   100% {
-    font-size: 40px;
+    font-size: 80px;
+  }
+}
+
+@keyframes mobile-size-change {
+  0% {
+    font-size: 60px;
+  }
+  50% {
+    font-size: 80px;
+  }
+  100% {
+    font-size: 60px;
   }
 }
 
@@ -40,7 +52,8 @@
 }
 
 @keyframes star {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -68,7 +81,7 @@
 
 .blinking-text {
   animation: size-change 2s infinite;
-  margin: 10px 0 10px 0;
+  margin: 45px 0 85px 0;
   font-size: 125px;
   font-weight: 900;
   letter-spacing: 1.7px;
@@ -82,8 +95,7 @@
 .default-text-container {
   text-align: center;
   margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px;
 }
 
 .default-text {
@@ -102,12 +114,21 @@
   word-wrap: break-word;
 }
 
+.default-text:hover {
+  background-color: transparent;
+  animation: none;
+  color: #ffe65e;
+}
+
 .border-images {
   background-image: url(../assets/bg-stars.jpg);
   height: 100%;
 }
 
 .image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 80%;
   margin: auto;
 
@@ -118,6 +139,11 @@
     border-radius: 16px 16px 16px 16px;
     box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
   }
+}
+
+.belli-pfp {
+  width: 30%;
+  margin: 5px;
 }
 
 .belli-pfp:hover {
@@ -227,17 +253,78 @@
 
 .navbar {
   display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
   background-color: #fff093;
-  position: fixed;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: 1000;
   max-height: 80px;
 }
 
+.belli-pfp-1 {
+  margin: 10px;
+  width: 30%;
+}
+
+.belli-pfp-main {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .belli-pfp-main {
+    width: 100%;
+  }
+
+  .belli-pfp {
+    width: 100%;
+  }
+
+  .belli-pfp-1 {
+    width: 100%;
+  }
+
+  .blinking-text {
+    animation: mobile-size-change 2s infinite;
+  }
+
+  .buynhold-text {
+    margin: 10px;
+  }
+
+  .slideshow-image {
+    width: 90% !important;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow-image {
+  width: 40%;
+  display: none;
+  transition: opacity 1s;
+  margin: 20px;
+  border-style: solid;
+  border-width: 6px 6px 6px 6px;
+  border-color: #fff093;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
+}
+
+.slideshow-image.active {
+  display: block;
+  opacity: 1;
+}
+
 .section-1 {
-  padding-top: 130px; /* Adjust according to the height of your navbar */
+  /* padding-top: 50px; */
 }
 
 .object1 {
@@ -296,13 +383,46 @@
   top: 0;
 }
 
+.object6 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj6.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object7 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj7.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object8 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../assets/obj8.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
 #object1 {
   left: 90%; /* Start at the left side of the screen */
   animation: fall 4.5s linear infinite;
 }
 
 #object2 {
-  left: 23%; /* Start at the left side of the screen */
+  left: 51%; /* Start at the left side of the screen */
   animation: fall 3.5s linear infinite;
 }
 
@@ -313,10 +433,25 @@
 
 #object4 {
   left: 65%; /* Start at the left side of the screen */
-  animation: fall 6.5s linear infinite;
+  animation: fall 4.2s linear infinite;
 }
 
 #object5 {
   left: 10%; /* Start at the left side of the screen */
+  animation: fall 5.1s linear infinite;
+}
+
+#object6 {
+  left: 43%; /* Start at the left side of the screen */
+  animation: fall 3.3s linear infinite;
+}
+
+#object7 {
+  left: 23%; /* Start at the left side of the screen */
+  animation: fall 4.7s linear infinite;
+}
+
+#object8 {
+  left: 82%; /* Start at the left side of the screen */
   animation: fall 5.5s linear infinite;
 }
