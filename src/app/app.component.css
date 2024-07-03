@@ -20,22 +20,10 @@
 
 @keyframes size-change {
   0% {
-    font-size: 80px;
-  }
-  50% {
-    font-size: 120px;
-  }
-  100% {
-    font-size: 80px;
-  }
-}
-
-@keyframes mobile-size-change {
-  0% {
     font-size: 60px;
   }
   50% {
-    font-size: 80px;
+    font-size: 100px;
   }
   100% {
     font-size: 60px;
@@ -234,10 +222,6 @@
 
   .belli-pfp-1 {
     width: 100%;
-  }
-
-  .blinking-text {
-    animation: mobile-size-change 2s infinite;
   }
 
   .buynhold-text {
