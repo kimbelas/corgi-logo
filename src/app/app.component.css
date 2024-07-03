@@ -21,12 +21,15 @@
 @keyframes size-change {
   0% {
     font-size: 60px;
+    color: #ffe65e;
   }
   50% {
     font-size: 100px;
+    color: #fff093;
   }
   100% {
     font-size: 60px;
+    color: #ffe65e;
   }
 }
 
