@@ -18,10 +18,21 @@
 
       <app-blinking-text></app-blinking-text>
 
-      <div class="col-12 text-center default-text-container"  (click)="copyToClipboard()">
-        <p class="default-text-1">
-          <i>CA:</i> {{ caString }}
-        </p>
+      <div
+        class="col-12 text-center default-text-container"
+        (click)="copyToClipboard()"
+      >
+        <p class="default-text-1"><i>CA:</i> {{ caString }}</p>
+      </div>
+
+      <div class="my-4">
+        <div class="col-12 text-center">
+          <span style="font-size: 60px"
+            >M<span style="color: #bb9f06">E</span
+            ><span style="color: #f92d3a">M</span
+            ><span style="color: #f4e8c1">E</span>S</span
+          >
+        </div>
       </div>
 
       <div class="col-12 justify-content-center d-flex image-container">
@@ -49,6 +60,20 @@
       </div>
 
       <div class="my-4">
+        <div class="col-12 text-center">
+          <span style="font-size: 60px"
+            >M<span style="color: #bb9f06">O</span
+            ><span style="color: #f92d3a">R</span>E </span
+          >
+          <span style="font-size: 60px"
+            >M<span style="color: #bb9f06">E</span
+            ><span style="color: #f92d3a">M</span
+            ><span style="color: #f4e8c1">E</span>S</span
+          >
+        </div>
+      </div>
+
+      <div class="my-4">
         <div class="col-12 text-center default-text-container">
           <p
             class="default-text"
@@ -59,6 +84,7 @@
           </p>
         </div>
       </div>
+
       <div class="col-12 justify-content-center d-flex image-container">
         <img src="../assets/eros-slide1.png" class="belli-pfp-1" />
         <img src="../assets/eros-slide2.png" class="belli-pfp-1" />
