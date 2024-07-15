@@ -1,0 +1,30 @@
+.buynhold-text {
+  margin: 0 auto;
+  max-width: 500px;
+  line-height: 1.6;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  background-color: transparent;
+  color: #ffffb6;
+  border-radius: 10px;
+  border: 3px solid #ffffb6;
+}
+
+.buynhold-text:hover {
+  background: #ffffb6;
+  color: black;
+  cursor: pointer;
+}
+
+.buynhold-container {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .buynhold-text {
+    margin: 10px;
+  }
+}

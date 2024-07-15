@@ -73,10 +73,9 @@
 .blinking-text {
   animation: size-change 2s infinite;
   margin: 45px 0 85px 0;
-  font-size: 125px;
   font-weight: 900;
   letter-spacing: 1.7px;
-  height: 100px; /* Fixed height to avoid content shift */
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,13 +95,26 @@
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 1.7px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
   background-color: #ffe65e;
-  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   animation: color-change 3s infinite;
   border: 3px solid white;
   word-wrap: break-word;
+}
+
+.default-text-1 {
+  margin: 0 auto;
+  max-width: 1120px;
+  line-height: 1.6;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  background-color: #ffe65e;
+  border-radius: 10px;
+  animation: color-change 3s infinite;
+  border: 3px solid white;
+  word-wrap: break-word;
+  padding: 40px;
 }
 
 .default-text:hover {
@@ -129,7 +141,6 @@
   border-width: 6px 6px 6px 6px;
   border-color: #fff093;
   border-radius: 16px 16px 16px 16px;
-  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
 }
 
 .belli-pfp {
@@ -142,56 +153,8 @@
   transform: scaleX(-1);
 }
 
-.buynhold-text {
-  margin: 0 auto;
-  max-width: 500px;
-  line-height: 1.6;
-  font-size: 60px;
-  font-weight: 900;
-  letter-spacing: 1.7px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
-  background-color: transparent;
-  color: #ffffb6;
-  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
-  border: 3px solid #ffffb6;
-}
-
-.buynhold-text:hover {
-  background: #ffffb6;
-  color: black;
-  cursor: pointer;
-}
-
-.gif-container {
-  display: inline-block;
-  margin-top: -50px; /* Adjust as needed */
-
-  .click-me-gif {
-    height: 130px;
-  }
-}
-
 .gif-container:hover {
   cursor: pointer;
-}
-
-@keyframes fall {
-  0% {
-    top: -52px; /* Start just above the viewport */
-  }
-  100% {
-    top: 100vh; /* Move to the bottom of the viewport */
-  }
-}
-
-@keyframes moveRight {
-  0% {
-    left: 0; /* Start from the left side */
-  }
-  100% {
-    left: 100vw; /* Move to the right side of the viewport */
-  }
 }
 
 .navbar {
@@ -262,131 +225,3 @@
   opacity: 1;
 }
 
-.object1 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj1.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 10%;
-  left: 0;
-}
-
-.object2 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj2.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object3 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj3.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object4 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj4.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object5 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj5.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object6 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj6.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object7 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj7.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-.object8 {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  background-image: url(../assets/obj8.png);
-  background-size: cover;
-  overflow: visible;
-  z-index: 5;
-  top: 0;
-}
-
-#object1 {
-  left: 90%; /* Start at the left side of the screen */
-  animation: fall 4.5s linear infinite;
-}
-
-#object2 {
-  left: 51%; /* Start at the left side of the screen */
-  animation: fall 3.5s linear infinite;
-}
-
-#object3 {
-  left: 35%; /* Start at the left side of the screen */
-  animation: fall 2.5s linear infinite;
-}
-
-#object4 {
-  left: 65%; /* Start at the left side of the screen */
-  animation: fall 4.2s linear infinite;
-}
-
-#object5 {
-  left: 10%; /* Start at the left side of the screen */
-  animation: fall 5.1s linear infinite;
-}
-
-#object6 {
-  left: 43%; /* Start at the left side of the screen */
-  animation: fall 3.3s linear infinite;
-}
-
-#object7 {
-  left: 23%; /* Start at the left side of the screen */
-  animation: fall 4.7s linear infinite;
-}
-
-#object8 {
-  left: 82%; /* Start at the left side of the screen */
-  animation: fall 5.5s linear infinite;
-}

@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +7,17 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
+  constructor (private clipboardService: ClipboardService) {}
+  caString: string = '67ykyRLNzoc1ucaLj1sg4iMxrRd1Vib1nPFzuNBrpump';
+
   onClick(value: string): void {
     if (value === 'x') {
       window.open('https://x.com/puppibelli?s=21&t=FsTntCLN3m1a02hbcp_rVw');
     } else if (value === 'tg') {
       window.open('https://t.me/+MIITV1xMOYhlYzhl');
     } else if (value === 'pump') {
-      window.open('https://pump.fun');
+      window.open('https://pump.fun/67ykyRLNzoc1ucaLj1sg4iMxrRd1Vib1nPFzuNBrpump');
     }
-  }
-
-  onBuy(): void {
-    // window.open('https://pump.fun');
   }
 
   images = [
@@ -78,6 +78,11 @@ export class AppComponent implements OnInit, OnDestroy {
     clearInterval(this.hoverInterval);
     this.hoverText = this.baseText;
     this.textContent = this.hoverText;
+  }
+
+  copyToClipboard() {
+    this.clipboardService.copyFromContent(this.caString);
+    alert('Text copied to clipboard');
   }
 
   ngOnDestroy(): void {
