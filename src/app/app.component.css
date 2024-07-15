@@ -20,25 +20,40 @@
 
 @keyframes size-change {
   0% {
+    font-size: 120px;
+    color: #F92D3A;
+  }
+  50% {
+    font-size: 160px;
+    color: #BB9F06;
+  }
+  100% {
+    font-size: 120px;
+    color: #F92D3A;
+  }
+}
+
+@keyframes size-change-mobile {
+  0% {
     font-size: 60px;
-    color: #ffe65e;
+    color: #F92D3A;
   }
   50% {
     font-size: 100px;
-    color: #fff093;
+    color: #BB9F06;
   }
   100% {
     font-size: 60px;
-    color: #ffe65e;
+    color: #F92D3A;
   }
 }
 
 @keyframes color-change {
   from {
-    background-color: rgb(245, 255, 100);
+    background-color: #F92D3A;
   }
   to {
-    background-color: rgb(255, 255, 39);
+    background-color: #BB9F06;
   }
 }
 
@@ -79,7 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #191716;
 }
 
 .default-text-container {
@@ -95,10 +110,10 @@
   font-size: 60px;
   font-weight: 900;
   letter-spacing: 1.7px;
-  background-color: #ffe65e;
+  background-color: #191716;
   border-radius: 10px;
   animation: color-change 3s infinite;
-  border: 3px solid white;
+  border: 3px solid #191716;
   word-wrap: break-word;
 }
 
@@ -109,10 +124,10 @@
   font-size: 30px;
   font-weight: 900;
   letter-spacing: 1.7px;
-  background-color: #ffe65e;
+  background-color: #191716;
   border-radius: 10px;
   animation: color-change 3s infinite;
-  border: 3px solid white;
+  border: 3px solid #191716;
   word-wrap: break-word;
   padding: 40px;
 }
@@ -120,11 +135,11 @@
 .default-text:hover {
   background-color: transparent;
   animation: none;
-  color: #ffe65e;
+  color: #191716;
 }
 
 .border-images {
-  background-image: url(../assets/bg-stars.jpg);
+  background-image: url(../assets/bg2.jpg);
   height: 100%;
 }
 
@@ -139,7 +154,7 @@
 .image-container img {
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: #fff093;
+  border-color: #191716;
   border-radius: 16px 16px 16px 16px;
 }
 
@@ -161,7 +176,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  background-color: #fff093;
+  background-color: #F0203a;
   width: 100%;
   opacity: 0.8;
   z-index: 1000;
@@ -197,6 +212,10 @@
   .slideshow-image {
     width: 90% !important;
   }
+
+  .blinking-text {
+    animation: size-change-mobile 2s infinite;
+  }
 }
 
 .slideshow-container {
@@ -215,7 +234,7 @@
   margin: 20px;
   border-style: solid;
   border-width: 6px 6px 6px 6px;
-  border-color: #fff093;
+  border-color: #191716;
   border-radius: 16px 16px 16px 16px;
   box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.07);
 }

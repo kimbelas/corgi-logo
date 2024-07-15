@@ -8,39 +8,39 @@ import { ClipboardService } from 'ngx-clipboard';
 })
 export class AppComponent implements OnInit, OnDestroy {
   constructor (private clipboardService: ClipboardService) {}
-  caString: string = '67ykyRLNzoc1ucaLj1sg4iMxrRd1Vib1nPFzuNBrpump';
+  caString: string = 'COMING SoooOOoon!';
 
   onClick(value: string): void {
     if (value === 'x') {
-      window.open('https://x.com/puppibelli?s=21&t=FsTntCLN3m1a02hbcp_rVw');
+      window.open('https://x.com/');
     } else if (value === 'tg') {
-      window.open('https://t.me/+MIITV1xMOYhlYzhl');
+      window.open('https://t.me/erosthecat');
     } else if (value === 'pump') {
-      window.open('https://pump.fun/67ykyRLNzoc1ucaLj1sg4iMxrRd1Vib1nPFzuNBrpump');
+      window.open('https://pump.fun/');
     }
   }
 
   images = [
-    '../assets/slide1.png',
-    '../assets/slide2.png',
-    '../assets/slide3.png'
+    '../assets/eros1.png',
+    '../assets/eros2.png',
+    '../assets/eros3.png'
   ];
   currentIndex = 0;
   intervalId: any;
 
   slideshowImages = [
-    '../assets/belli1.png',
-    '../assets/belli2.png',
-    '../assets/belli3.png',
-    '../assets/belli4.png',
-    '../assets/belli5.png',
-    '../assets/belli6.png',
-    '../assets/belii-bitcoin.png',
-    '../assets/belii-g.png',
-    '../assets/belli-fairy.png',
-    '../assets/belli-glasses.png',
-    '../assets/belli-hodl.png',
-    '../assets/belli-police.png',
+    '../assets/eros1.png',
+    '../assets/eros2.png',
+    '../assets/eros3.png',
+    '../assets/eros4.png',
+    '../assets/eros5.png',
+    '../assets/eros6.png',
+    '../assets/eros7.png',
+    '../assets/eros8.png',
+    '../assets/eros9.png',
+    '../assets/eros10.png',
+    '../assets/eros11.png',
+    '../assets/eros12.png',
   ];
   currentSlideIndex = 0;
   slideshowIntervalId: any;
@@ -62,14 +62,14 @@ export class AppComponent implements OnInit, OnDestroy {
     }, 1500);
   }
 
-  textContent: string = 'BELLI TALKSSS';
+  textContent: string = 'EROS FEELING SEXYYYY';
   private hoverInterval: any;
-  private baseText: string = 'BELLI TALKSSS';
+  private baseText: string = 'EROS FEELING SEXYYYY';
   private hoverText: string = this.baseText;
 
   onMouseOver(): void {
     this.hoverInterval = setInterval(() => {
-      this.hoverText += 'S';
+      this.hoverText += 'Y';
       this.textContent = this.hoverText;
     }, 500);
   }

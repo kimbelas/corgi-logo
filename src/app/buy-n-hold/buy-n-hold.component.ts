@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class BuyNHoldComponent {
   onBuy(): void {
-    window.open('https://pump.fun/67ykyRLNzoc1ucaLj1sg4iMxrRd1Vib1nPFzuNBrpump');
+    window.open('https://pump.fun');
   }
 }

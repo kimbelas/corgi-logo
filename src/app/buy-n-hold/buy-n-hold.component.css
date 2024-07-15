@@ -6,14 +6,14 @@
   font-weight: 900;
   letter-spacing: 1.7px;
   background-color: transparent;
-  color: #ffffb6;
+  color: #191716;
   border-radius: 10px;
-  border: 3px solid #ffffb6;
+  border: 3px solid #9fa4C4;
 }
 
 .buynhold-text:hover {
-  background: #ffffb6;
-  color: black;
+  background: #191716;
+  color: #f4e8c1;
   cursor: pointer;
 }
 
