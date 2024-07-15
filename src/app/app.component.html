@@ -1,13 +1,5 @@
 <div appGlitter>
-  <div class="object1" id="object1"></div>
-  <div class="object2" id="object2"></div>
-  <div class="object3" id="object3"></div>
-  <div class="object4" id="object4"></div>
-  <div class="object5" id="object5"></div>
-  <div class="object6" id="object6"></div>
-  <div class="object7" id="object7"></div>
-  <div class="object8" id="object8"></div>
-
+  <app-objects></app-objects>
   <div class="border-images">
     <div class="navbar">
       <div class="justify-content-between d-flex align-items-center">
@@ -46,7 +38,7 @@
             *ngFor="let image of slideshowImages; let i = index"
             [src]="image"
             [class.active]="i === currentSlideIndex"
-            width='50%'
+            width="50%"
             class="slideshow-image"
           />
         </div>
@@ -54,32 +46,38 @@
 
       <div class="my-4">
         <div class="col-12 text-center">
-          <span class="blinking-text">$BELLI</span>
+          <span class="blinking-text">$EROS</span>
         </div>
       </div>
 
-      <div class="col-12 justify-content-center d-flex image-container">
-        <img src="../assets/belii-bitcoin.png" class="belli-pfp" />
-        <img src="../assets/belii-g.png" class="belli-pfp" />
-        <img src="../assets/belli-fairy.png" class="belli-pfp" />
+      <div class="col-12 text-center default-text-container"  (click)="copyToClipboard()">
+        <p class="default-text-1">
+          <i>CA:</i> {{ caString }}
+        </p>
       </div>
 
       <div class="col-12 justify-content-center d-flex image-container">
-        <img src="../assets/belli-police.png" class="belli-pfp" />
-        <img src="../assets/belli-glasses.png" class="belli-pfp" />
-        <img src="../assets/belli-hodl.png" class="belli-pfp" />
+        <img src="../assets/eros1.png" class="belli-pfp" />
+        <img src="../assets/eros2.png" class="belli-pfp" />
+        <img src="../assets/eros3.png" class="belli-pfp" />
       </div>
 
       <div class="col-12 justify-content-center d-flex image-container">
-        <img src="../assets/belli1.png" class="belli-pfp" />
-        <img src="../assets/belli2.png" class="belli-pfp" />
-        <img src="../assets/belli3.png" class="belli-pfp" />
+        <img src="../assets/eros4.png" class="belli-pfp" />
+        <img src="../assets/eros5.png" class="belli-pfp" />
+        <img src="../assets/eros6.png" class="belli-pfp" />
       </div>
 
       <div class="col-12 justify-content-center d-flex image-container">
-        <img src="../assets/belli4.png" class="belli-pfp" />
-        <img src="../assets/belli5.png" class="belli-pfp" />
-        <img src="../assets/belli6.png" class="belli-pfp" />
+        <img src="../assets/eros7.png" class="belli-pfp" />
+        <img src="../assets/eros8.png" class="belli-pfp" />
+        <img src="../assets/eros9.png" class="belli-pfp" />
+      </div>
+
+      <div class="col-12 justify-content-center d-flex image-container">
+        <img src="../assets/eros10.png" class="belli-pfp" />
+        <img src="../assets/eros11.png" class="belli-pfp" />
+        <img src="../assets/eros12.png" class="belli-pfp" />
       </div>
 
       <div class="my-4">
@@ -94,27 +92,17 @@
         </div>
       </div>
       <div class="col-12 justify-content-center d-flex image-container">
-        <img src="../assets/slide1.png" class="belli-pfp-1" />
-        <img src="../assets/slide2.png" class="belli-pfp-1" />
-        <img src="../assets/slide3.png" class="belli-pfp-1" />
+        <img src="../assets/eros-slide1.png" class="belli-pfp-1" />
+        <img src="../assets/eros-slide2.png" class="belli-pfp-1" />
+        <img src="../assets/eros-slide3.png" class="belli-pfp-1" />
       </div>
 
-      <div class="mt-5">
-        <div class="col-12 text-center">
-          <p class="buynhold-text" (click)="onBuy()">BUY & HODL</p>
-        </div>
-        <div class="col-12 text-center pb-4">
-          <div class="gif-container" (click)="onBuy()">
-            <img src="../assets/klick-click.gif" class="click-me-gif" />
-          </div>
-        </div>
+      <div class="col-12 justify-content-center d-flex image-container">
+        <img src="../assets/eros-slide4.png" class="belli-pfp-1" />
+        <img src="../assets/eros-slide5.png" class="belli-pfp-1" />
       </div>
 
-      <!-- <div class="justify-content-center align-items-center">
-        <div class="col-12 text-center image-container">
-          <img src="../assets/belli-pfp.png" class="belli-pfp-main" />
-        </div>
-      </div> -->
+      <app-buy-n-hold></app-buy-n-hold>
     </div>
   </div>
 </div>

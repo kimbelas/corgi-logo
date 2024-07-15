@@ -1,0 +1,137 @@
+@keyframes fall {
+  0% {
+    top: -52px; /* Start just above the viewport */
+  }
+  100% {
+    top: 100vh; /* Move to the bottom of the viewport */
+  }
+}
+
+.object1 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj1.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 10%;
+  left: 0;
+}
+
+.object2 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj2.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object3 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj3.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object4 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj1.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object5 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj2.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object6 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj3.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object7 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj1.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+.object8 {
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  background-image: url(../../assets/obj2.png);
+  background-size: cover;
+  overflow: visible;
+  z-index: 5;
+  top: 0;
+}
+
+#object1 {
+  left: 90%; /* Start at the left side of the screen */
+  animation: fall 4.5s linear infinite;
+}
+
+#object2 {
+  left: 51%; /* Start at the left side of the screen */
+  animation: fall 3.5s linear infinite;
+}
+
+#object3 {
+  left: 35%; /* Start at the left side of the screen */
+  animation: fall 2.5s linear infinite;
+}
+
+#object4 {
+  left: 65%; /* Start at the left side of the screen */
+  animation: fall 4.2s linear infinite;
+}
+
+#object5 {
+  left: 10%; /* Start at the left side of the screen */
+  animation: fall 5.1s linear infinite;
+}
+
+#object6 {
+  left: 43%; /* Start at the left side of the screen */
+  animation: fall 3.3s linear infinite;
+}
+
+#object7 {
+  left: 23%; /* Start at the left side of the screen */
+  animation: fall 4.7s linear infinite;
+}
+
+#object8 {
+  left: 82%; /* Start at the left side of the screen */
+  animation: fall 5.5s linear infinite;
+}
