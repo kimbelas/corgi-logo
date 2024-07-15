@@ -39,9 +39,3 @@
   justify-content: center;
   color: #191716;
 }
-
-@media (max-width: 768px) {
-  .blinking-text {
-    animation: size-change-mobile 2s infinite;
-  }
-}

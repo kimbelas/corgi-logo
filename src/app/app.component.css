@@ -34,7 +34,7 @@
 .default-text-container {
   text-align: center;
   margin: 0 auto;
-  padding: 25px;
+  padding: 0 25px 25px 25px;
 }
 
 .default-text {
