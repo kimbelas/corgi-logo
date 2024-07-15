@@ -1,0 +1,47 @@
+@keyframes size-change {
+  0% {
+    font-size: 120px;
+    color: #191716;
+  }
+  50% {
+    font-size: 160px;
+    color: #F92D3A;
+  }
+  100% {
+    font-size: 120px;
+    color: #191716;
+  }
+}
+
+@keyframes size-change-mobile {
+  0% {
+    font-size: 60px;
+    color: #191716;
+  }
+  50% {
+    font-size: 100px;
+    color: #F92D3A;
+  }
+  100% {
+    font-size: 60px;
+    color: #191716;
+  }
+}
+
+.blinking-text {
+  animation: size-change 2s infinite;
+  margin: 45px 0 85px 0;
+  font-weight: 900;
+  letter-spacing: 1.7px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #191716;
+}
+
+@media (max-width: 768px) {
+  .blinking-text {
+    animation: size-change-mobile 2s infinite;
+  }
+}
