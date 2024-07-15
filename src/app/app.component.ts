@@ -10,16 +10,6 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor (private clipboardService: ClipboardService) {}
   caString: string = 'COMING SoooOOoon!';
 
-  onClick(value: string): void {
-    if (value === 'x') {
-      window.open('https://x.com/');
-    } else if (value === 'tg') {
-      window.open('https://t.me/erosthecat');
-    } else if (value === 'pump') {
-      window.open('https://pump.fun/');
-    }
-  }
-
   images = [
     '../assets/eros1.png',
     '../assets/eros2.png',

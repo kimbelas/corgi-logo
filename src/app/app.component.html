@@ -1,35 +1,7 @@
 <div appGlitter>
   <app-objects></app-objects>
   <div class="border-images">
-    <div class="navbar">
-      <div class="justify-content-between d-flex align-items-center">
-        <div class="col-12 d-flex justify-content-center">
-          <img
-            class="logo-brand shake-on-hover"
-            (click)="onClick('x')"
-            src="../assets/x-icon-removebg-preview.png"
-            height="60px"
-            alt="X Icon"
-          />
-          <img
-            class="logo-brand shake-on-hover"
-            (click)="onClick('tg')"
-            src="../assets/tg-icon-removebg-preview.png"
-            height="60px"
-            [style]="{ 'padding-left': '25px' }"
-            alt="TG Icon"
-          />
-          <img
-            class="logo-brand shake-on-hover"
-            (click)="onClick('pump')"
-            src="../assets/pumpfun-removebg-preview.png"
-            height="60px"
-            [style]="{ 'padding-left': '35px' }"
-            alt="TG Icon"
-          />
-        </div>
-      </div>
-    </div>
+    <app-navbar></app-navbar>
 
     <div class="section-1">
       <div class="col-12 text-center mt-4">
@@ -44,11 +16,7 @@
         </div>
       </div>
 
-      <div class="my-4">
-        <div class="col-12 text-center">
-          <span class="blinking-text">$EROS</span>
-        </div>
-      </div>
+      <app-blinking-text></app-blinking-text>
 
       <div class="col-12 text-center default-text-container"  (click)="copyToClipboard()">
         <p class="default-text-1">
